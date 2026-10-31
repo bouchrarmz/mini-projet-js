@@ -1,0 +1,29 @@
+/* #form{
+    visibility: hidden;
+    
+} */
+ main{
+    background-color: rgb(102, 102, 108);
+    padding: 34px;;
+ }
+ #form{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(188, 188, 208);
+    border-color: blue;
+    border-radius: 12px;
+    width: 30%;
+    height: 30%;
+    margin: auto;
+    padding: 12px;
+    gap: 14px;
+    
+ }
+ button{
+background-color: green;
+ }
+ #search{
+  width: 100%; 
+    background-color: rgb(188, 188, 208) ;
+ }
+ 
