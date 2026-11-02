@@ -29,7 +29,7 @@ contactsAfficher.forEach(contact => {
 
     edit.classList.add('edit')
     edit.textContent='modifer'
-child.textContent= contact.id +"-"+contact.nom +'-'+ contact.tele
+child.textContent= " ID: "+contact.id +"-----"+ "nom: "+contact.nom +'-----'+ "telephon: "+contact.tele
 child.append(edit,sup)
 liste.append(child);
 

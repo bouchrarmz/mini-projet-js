@@ -26,4 +26,6 @@ background-color: green;
   width: 100%; 
     background-color: rgb(188, 188, 208) ;
  }
- 
+ .supression{
+   background-color: red;
+ }
