@@ -12,9 +12,9 @@ const valure=document.querySelector('.valure')
 let contacts = []
 let modifactioncontact= null;
 
-function afficher(){
+function afficher(contactsAfficher = contacts){
      liste.innerHTML = "";
- contacts.forEach(contact => {
+contactsAfficher.forEach(contact => {
     //  const parent=document.createComment('div')
      const child= document.createElement('li');
      child.classList.add('child')
@@ -82,12 +82,12 @@ if(e.target.classList.contains('supression') ){
     
      }
 })
-// search.addEventListener('input', function(){
-//     let  nomserch=search.value.toLowerCase();
-//     const filternom= contacts.filter(nom.toLowerCase().includes(nomserch))
+ search.addEventListener('input', function(){
+    let  nomserch=search.value.toLowerCase();
+    const filternom= contacts.filter(c=>c.nom.toLowerCase().includes(nomserch))
     
-//     afficher();
-// })
+     afficher(filternom);
+ })
 
 
 
